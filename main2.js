@@ -133,7 +133,7 @@ function evaluateIndividualItemsPounds(weightsArray, output) {
 
 function evaluateIndividualItemsOunces(weightsArray, output) {
   if (weightsArray[0] > 41.6) {
-    output.innerHTML = output.textContent + "<br><br>You should consider a lighter pack (something under 41.6 ounces).  Consider something like: <br><br><a href='https://www.ula-equipment.com/product/circuit/' target='_blank'>ULA Circuit</a><br><br> <a href='http://zpacks.com/backpacks/arc_haul.shtml' target='_blank'>or Zpacks Arc Haul</a><br>"
+    output.innerHTML = output.textContent + "<br><br>You should consider a lighter pack (something under 41.6 ounces).  Consider something like: </br><br><a href='https://www.ula-equipment.com/product/circuit/' target='_blank'>ULA Circuit</a><br><br> <a href='http://zpacks.com/backpacks/arc_haul.shtml' target='_blank'>or Zpacks Arc Haul</a><br>"
   }
   if (weightsArray[1] > 40) {
     output.innerHTML += "<br>You should consider a lighter tent (something under 40 ounces).  Consider something like:<br><br> <a href='https://www.bigagnes.com/Fly-Creek-HV-UL2-Person'>Big Agnes Fly Creek HV UL2</a><br><br> <a href='https://www.bigagnes.com/Fly-Creek-HV-UL1-Person' target='_blank'>Big Agnes Fly Creek HV UL1</a><br><br> <a href='https://www.bigagnes.com/Fly-Creek-HV-2-Platinum' target='_blank'>Big Agnes Fly Creek HV2 Platinum</a><br><br> <a href='https://www.bigagnes.com/Fly-Creek-HV-1-Platinum' target='_blank'>Big Agnes Fly Creek HV1 Platinum</a><br><br>or a tent from <a href='http://zpacks.com/shelters.shtml' target='_blank'>Zpacks.<br>"
