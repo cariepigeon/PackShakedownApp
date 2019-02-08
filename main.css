@@ -48,6 +48,7 @@ main {
   background: blue;
 } */
 button {
+  background-color: #f2f2f2;
   display:block;
   margin: 1rem auto;
   padding: .5rem;
