@@ -1,0 +1,93 @@
+/*normalize css*/
+* {
+	box-sizing: inherit;
+	margin: 0;
+	padding:	0;
+}
+html {
+	font-size: 62.5%;
+}
+
+/*css file*/
+body {
+	font-family: 'Roboto Slab', serif;
+	color: black;
+	font-size: 1.4rem;
+  text-align: center;
+	padding:1rem;
+	box-sizing: border-box;
+	min-height: 100vh;
+}
+header {
+  background: lightgreen;
+  border-radius:  .5rem .5rem 0 0;
+  box-shadow: .2rem 0 1rem rgba(0,0,0,.2);
+}
+header p {
+  padding: 0 1rem;
+}
+header, main {
+  margin: 0 auto;
+  padding: 1rem 0;
+  max-width: 1200px;
+}
+p {
+  padding: .5rem;
+}
+main {
+  background: lightblue;
+  font-size: 1.5rem;
+  border-radius: 0 0 .5rem .5rem;
+  box-shadow: 0 .2rem 1rem rgba(0,0,0,.2);
+}
+/* .item-holder {
+  background: blue;
+} */
+button {
+  display:block;
+  margin: 1rem auto;
+  padding: .5rem;
+  font-size: 1.5rem;
+  border: .35rem solid darkgrey;
+  border-radius: 1rem;
+	box-shadow: 0 .2rem 1rem rgba(0,0,0,.2);
+}
+button:hover {
+  transform: scale(1.02);
+	box-shadow: 0 .2rem .5rem rgba(0,0,0,.2);
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+input {
+  margin: 1rem;
+	padding: .5rem;
+	box-shadow: 0 .2rem 1rem rgba(0,0,0,.2);
+}
+input[type='radio'] {
+	transform: scale(1.2);
+	box-shadow: 0 .2rem 1rem rgba(0,0,0,.2);
+}
+input[type='radio']:hover {
+	transform: scale(1.3);
+	box-shadow: 0 .2rem 1rem rgba(0,0,0,.2);
+}
+p.units {
+  display: inline;
+}
+.shakedown {
+  background-color: transparent;
+  margin: 2.5rem auto 1rem auto;
+	padding: 1.5rem;
+	border: .35rem solid darkgrey;
+	border-radius: 1rem;
+	box-shadow: 0 .2rem 1rem rgba(0,0,0,.2);
+	text-transform: uppercase;
+}
+.shakedown:hover {
+	transform: scale(1.05);
+	box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.2);
+}

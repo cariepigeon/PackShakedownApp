@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Virtual Pack Shakedown</title>
+</head>
+<body>
+  <header>
+    <h1>Virtual Pack Shakedown</h1>
+    <p>Are you an upcoming thru hiker who wants a quick pack shakedown before you start your big adventure?  Try the digital pack shakedown tool!  Simply click on the button of the item you plan on loading up in your pack, then enter the weight for that item.  Then click the radio button for the season that this info is for.  You can get a shake down for spring/fall season or summer season, when you may change up a few items.</p>
+  </header>
+  <main>
+    <div class="container">
+  <!--nextElementSibling, for grabbing div hide after button-->
+    <p>Would you like to weigh your gear in pounds or ounces?</p><input type="radio" id="pound" class="pounds" name="unit" /><p class="units">pounds</p> <input type="radio" id="ounce" class="ounces" name="unit" /><p class="units">ounces</p>
+
+      <button class="item"value="backpack"><i class="fas fa-hiking"></i> Backpack</button>
+      <div class="hide">
+        backpack weight:<input type="text" class="weight" />
+      </div>
+
+    <button class="item"value="tent"><i class="fas fa-campground"></i> Tent</button>
+    <div class="hide">
+      tent weight:<input type="text" class="weight" />
+    </div>
+
+    <button class="item"value="sleeping bag"><i class="fas fa-bed"></i> Sleeping Bag</button>
+    <div class="hide">
+      sleeping bag weight:<input type="text" class="weight" />
+    </div>
+
+    <button class="item"value="sleeping pad"><i class="far fa-moon"></i> Sleeping Pad</button>
+    <div class="hide">
+      sleeping pad weight:<input type="text" class="weight" />
+    </div>
+
+    <button class="item"value="stove"><i class="fas fa-burn"></i> Stove</button>
+    <div class="hide">
+      stove weight:<input type="text" class="weight" />
+    </div>
+    
+    <button class="item"value="base-layer"><i class="fas fa-child"></i> Base Layer (top & bottom)</button>
+    <div class="hide">
+      base layers weight:<input type="text" class="weight" />
+      <p>How many pairs of base layers are you planning on bringing? <input type="number" class="extra" /></p>
+    </div>
+
+    <button class="item"value="mid-layer"><i class="fas fa-diagnoses"></i> Mid Layer</button>
+    <div class="hide">
+      mid layers weight:<input type="text" class="weight" />
+      <p>How many pairs of mid layers are you planning on bringing? <input type="number" class="extra" /></p>
+    </div>
+
+    <button class="item"value="warm-jacket"><i class="fas fa-snowflake"></i> Warm Jacket (like a puffy)</button>
+    <div class="hide">
+      warm jacket weight:<input type="text" class="weight" />
+      <p>How many jackets (not including your rain jacket) are you planning on bringing? <input type="number" class="extra"/></p>
+    </div>
+
+    <button class="item"value="rain jacket-and-pants"><i class="fas fa-cloud-showers-heavy"></i> Rain Jacket & Pants</button>
+    <div class="hide">
+      rain gear weight:<input type="text" class="weight" />
+    </div>
+
+    <button class="item"value="other extra clothing"><i class="fas fa-tshirt"></i> Clothing</button>
+    <div class="hide">
+      clothing weight:<input type="text" class="weight" />
+      <p>How many pairs of socks are you packing, other than the ones on your feet? <input type="number" class="extra" /></p>
+      <p>How many t-shirts are you planning on bringing, other than the one on your back? <input type="number" class="extra"/></p>
+      <p>How many pairs of long pants are you planning on bringing? <input type="number" class="extra"/></p>
+    </div>
+
+    <button class="item"value="miscellaney"><i class="fas fa-binoculars"></i> Miscellaney (like gadgets, headlamp, batteries, etc.)</button>
+    <div class="hide">
+      miscellaney weight:<input type="text" class="weight" />
+    </div>
+
+    <button class="item"value="filter"><i class="fas fa-water"></i> Water Filter or Purification System</button>
+    <div class="hide">
+      Water filter weight:<input type="text" class="weight" /> 
+    </div>
+
+    <button class="item"value="other"><i class="fas fa-binoculars"></i> Other Items Not Mentioned in Above Buttons</button>
+    <div class="hide">
+      other items weight:<input type="text" class="weight" /> 
+    </div>
+  </div>
+
+    <div id="shakedownButton">
+      <button class="shakedown" value="shakedown"> <i class="fas fa-balance-scale"></i> Pack Shakedown!</button>
+    </div>
+    <div class="output">
+
+    </div>
+    
+  </main>
+  <script src="main2.js"></script>
+  <!--<script src="main.js"></script>-->
+</body>
+</html>
+
